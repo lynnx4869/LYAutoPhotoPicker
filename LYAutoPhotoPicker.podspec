@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   s.source_files  = "LYAutoPhotoPicker", "LYAutoPhotoPicker/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "LYAutoPhotoPicker/ly_consts.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
