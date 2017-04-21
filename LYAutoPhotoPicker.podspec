@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESCRIPTION
                     A photo picker for iOS like mobile QQ.
+                    Just want to manage the libs.
                    DESCRIPTION
 
   s.homepage     = "https://github.com/lynnx4869/LYAutoPhotoPicker"
@@ -54,7 +55,7 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "lynnx4869" => "lynnx4869@gmail.com" }
-  s.social_media_url   = "https://twitter.com/lynnx4869"
+  # s.social_media_url   = "https://twitter.com/lynnx4869"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -88,11 +89,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "LYAutoPhotoPicker", "LYAutoPhotoPicker/**/*.{h,m}"
+  s.source_files  = "Classes/Classes/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
-
-  s.public_header_files = "LYAutoPhotoPicker/ly_consts.h"
-
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -103,7 +101,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resources = "Classes/Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -127,11 +125,12 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "Masonry"
   s.dependency "MWPhotoBrowser"
   s.dependency "TOCropViewController"
+  s.dependency "LYAutoUtil"
 
 end

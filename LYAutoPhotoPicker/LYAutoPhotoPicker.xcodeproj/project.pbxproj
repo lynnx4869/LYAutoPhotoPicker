@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B1BB0CF1EA9F19B00755DB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BB0CE1EA9F19B00755DB7 /* main.m */; };
+		8B1BB0D21EA9F19B00755DB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BB0D11EA9F19B00755DB7 /* AppDelegate.m */; };
+		8B1BB0D51EA9F19B00755DB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BB0D41EA9F19B00755DB7 /* ViewController.m */; };
+		8B1BB0D81EA9F19B00755DB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0D61EA9F19B00755DB7 /* Main.storyboard */; };
+		8B1BB0DA1EA9F19B00755DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0D91EA9F19B00755DB7 /* Assets.xcassets */; };
+		8B1BB0DD1EA9F19B00755DB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0DB1EA9F19B00755DB7 /* LaunchScreen.storyboard */; };
+		8B1BB0F91EA9F1F600755DB7 /* ly_arrow_detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0E71EA9F1F600755DB7 /* ly_arrow_detail@2x.png */; };
+		8B1BB0FA1EA9F1F600755DB7 /* ly_arrow_detail@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0E81EA9F1F600755DB7 /* ly_arrow_detail@3x.png */; };
+		8B1BB0FB1EA9F1F600755DB7 /* ly_camera-front-on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0E91EA9F1F600755DB7 /* ly_camera-front-on@2x.png */; };
+		8B1BB0FC1EA9F1F600755DB7 /* ly_camera-front-on@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0EA1EA9F1F600755DB7 /* ly_camera-front-on@3x.png */; };
+		8B1BB0FD1EA9F1F600755DB7 /* ly_cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0EB1EA9F1F600755DB7 /* ly_cross@2x.png */; };
+		8B1BB0FE1EA9F1F600755DB7 /* ly_cross@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0EC1EA9F1F600755DB7 /* ly_cross@3x.png */; };
+		8B1BB0FF1EA9F1F600755DB7 /* ly_cut@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0ED1EA9F1F600755DB7 /* ly_cut@2x.png */; };
+		8B1BB1001EA9F1F600755DB7 /* ly_cut@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0EE1EA9F1F600755DB7 /* ly_cut@3x.png */; };
+		8B1BB1011EA9F1F600755DB7 /* ly_flash-off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0EF1EA9F1F600755DB7 /* ly_flash-off@2x.png */; };
+		8B1BB1021EA9F1F600755DB7 /* ly_flash-off@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0F01EA9F1F600755DB7 /* ly_flash-off@3x.png */; };
+		8B1BB1031EA9F1F600755DB7 /* ly_flash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0F11EA9F1F600755DB7 /* ly_flash@2x.png */; };
+		8B1BB1041EA9F1F600755DB7 /* ly_flash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0F21EA9F1F600755DB7 /* ly_flash@3x.png */; };
+		8B1BB1051EA9F1F600755DB7 /* ly_lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0F31EA9F1F600755DB7 /* ly_lock@2x.png */; };
+		8B1BB1061EA9F1F600755DB7 /* ly_lock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0F41EA9F1F600755DB7 /* ly_lock@3x.png */; };
+		8B1BB1071EA9F1F600755DB7 /* ly_round@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0F51EA9F1F600755DB7 /* ly_round@2x.png */; };
+		8B1BB1081EA9F1F600755DB7 /* ly_round@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0F61EA9F1F600755DB7 /* ly_round@3x.png */; };
+		8B1BB1091EA9F1F600755DB7 /* ly_sure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0F71EA9F1F600755DB7 /* ly_sure@2x.png */; };
+		8B1BB10A1EA9F1F600755DB7 /* ly_sure@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB0F81EA9F1F600755DB7 /* ly_sure@3x.png */; };
+		8B1BB10D1EA9F3D800755DB7 /* LYAutoPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BB10C1EA9F3D800755DB7 /* LYAutoPhotoManager.m */; };
+		8B1BB1101EA9F3FF00755DB7 /* LYPhotoBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BB10F1EA9F3FF00755DB7 /* LYPhotoBasicViewController.m */; };
+		8B1BB1131EA9F42C00755DB7 /* LYCameraUtilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BB1121EA9F42C00755DB7 /* LYCameraUtilViewController.m */; };
+		8B1BB1161EA9F44800755DB7 /* LYAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BB1151EA9F44800755DB7 /* LYAlbumsViewController.m */; };
+		8B1BB11A1EA9F4A300755DB7 /* LYAlbumDisplayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BB1181EA9F4A300755DB7 /* LYAlbumDisplayCell.m */; };
+		8B1BB11B1EA9F4A300755DB7 /* LYAlbumDisplayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB1191EA9F4A300755DB7 /* LYAlbumDisplayCell.xib */; };
+		8B1BB11E1EA9F4E500755DB7 /* LYPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BB11D1EA9F4E500755DB7 /* LYPhotosViewController.m */; };
+		8B1BB1221EA9F50F00755DB7 /* LYPhotoSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BB1201EA9F50F00755DB7 /* LYPhotoSelectCell.m */; };
+		8B1BB1231EA9F50F00755DB7 /* LYPhotoSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB1211EA9F50F00755DB7 /* LYPhotoSelectCell.xib */; };
+		8B1BB1271EA9F52E00755DB7 /* LYAutoPhotoAuthErrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BB1251EA9F52E00755DB7 /* LYAutoPhotoAuthErrorViewController.m */; };
+		8B1BB1281EA9F52E00755DB7 /* LYAutoPhotoAuthErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BB1261EA9F52E00755DB7 /* LYAutoPhotoAuthErrorViewController.xib */; };
+		C2F164C67CEEBCE9B6AC787B /* libPods-LYAutoPhotoPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D35B2A7BB5D75D92C079A47B /* libPods-LYAutoPhotoPicker.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6DD022D5F3A985FB1C499ECC /* Pods-LYAutoPhotoPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYAutoPhotoPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYAutoPhotoPicker/Pods-LYAutoPhotoPicker.release.xcconfig"; sourceTree = "<group>"; };
+		8B1BB0CA1EA9F19B00755DB7 /* LYAutoPhotoPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYAutoPhotoPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1BB0CE1EA9F19B00755DB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B1BB0D01EA9F19B00755DB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8B1BB0D11EA9F19B00755DB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8B1BB0D31EA9F19B00755DB7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8B1BB0D41EA9F19B00755DB7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8B1BB0D71EA9F19B00755DB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B1BB0D91EA9F19B00755DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B1BB0DC1EA9F19B00755DB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B1BB0DE1EA9F19B00755DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B1BB0E71EA9F1F600755DB7 /* ly_arrow_detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_arrow_detail@2x.png"; sourceTree = "<group>"; };
+		8B1BB0E81EA9F1F600755DB7 /* ly_arrow_detail@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_arrow_detail@3x.png"; sourceTree = "<group>"; };
+		8B1BB0E91EA9F1F600755DB7 /* ly_camera-front-on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_camera-front-on@2x.png"; sourceTree = "<group>"; };
+		8B1BB0EA1EA9F1F600755DB7 /* ly_camera-front-on@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_camera-front-on@3x.png"; sourceTree = "<group>"; };
+		8B1BB0EB1EA9F1F600755DB7 /* ly_cross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_cross@2x.png"; sourceTree = "<group>"; };
+		8B1BB0EC1EA9F1F600755DB7 /* ly_cross@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_cross@3x.png"; sourceTree = "<group>"; };
+		8B1BB0ED1EA9F1F600755DB7 /* ly_cut@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_cut@2x.png"; sourceTree = "<group>"; };
+		8B1BB0EE1EA9F1F600755DB7 /* ly_cut@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_cut@3x.png"; sourceTree = "<group>"; };
+		8B1BB0EF1EA9F1F600755DB7 /* ly_flash-off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_flash-off@2x.png"; sourceTree = "<group>"; };
+		8B1BB0F01EA9F1F600755DB7 /* ly_flash-off@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_flash-off@3x.png"; sourceTree = "<group>"; };
+		8B1BB0F11EA9F1F600755DB7 /* ly_flash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_flash@2x.png"; sourceTree = "<group>"; };
+		8B1BB0F21EA9F1F600755DB7 /* ly_flash@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_flash@3x.png"; sourceTree = "<group>"; };
+		8B1BB0F31EA9F1F600755DB7 /* ly_lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_lock@2x.png"; sourceTree = "<group>"; };
+		8B1BB0F41EA9F1F600755DB7 /* ly_lock@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_lock@3x.png"; sourceTree = "<group>"; };
+		8B1BB0F51EA9F1F600755DB7 /* ly_round@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_round@2x.png"; sourceTree = "<group>"; };
+		8B1BB0F61EA9F1F600755DB7 /* ly_round@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_round@3x.png"; sourceTree = "<group>"; };
+		8B1BB0F71EA9F1F600755DB7 /* ly_sure@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_sure@2x.png"; sourceTree = "<group>"; };
+		8B1BB0F81EA9F1F600755DB7 /* ly_sure@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ly_sure@3x.png"; sourceTree = "<group>"; };
+		8B1BB10B1EA9F3D800755DB7 /* LYAutoPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAutoPhotoManager.h; sourceTree = "<group>"; };
+		8B1BB10C1EA9F3D800755DB7 /* LYAutoPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYAutoPhotoManager.m; sourceTree = "<group>"; };
+		8B1BB10E1EA9F3FF00755DB7 /* LYPhotoBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYPhotoBasicViewController.h; sourceTree = "<group>"; };
+		8B1BB10F1EA9F3FF00755DB7 /* LYPhotoBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPhotoBasicViewController.m; sourceTree = "<group>"; };
+		8B1BB1111EA9F42C00755DB7 /* LYCameraUtilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCameraUtilViewController.h; sourceTree = "<group>"; };
+		8B1BB1121EA9F42C00755DB7 /* LYCameraUtilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCameraUtilViewController.m; sourceTree = "<group>"; };
+		8B1BB1141EA9F44800755DB7 /* LYAlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAlbumsViewController.h; sourceTree = "<group>"; };
+		8B1BB1151EA9F44800755DB7 /* LYAlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYAlbumsViewController.m; sourceTree = "<group>"; };
+		8B1BB1171EA9F4A300755DB7 /* LYAlbumDisplayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAlbumDisplayCell.h; sourceTree = "<group>"; };
+		8B1BB1181EA9F4A300755DB7 /* LYAlbumDisplayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYAlbumDisplayCell.m; sourceTree = "<group>"; };
+		8B1BB1191EA9F4A300755DB7 /* LYAlbumDisplayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYAlbumDisplayCell.xib; sourceTree = "<group>"; };
+		8B1BB11C1EA9F4E500755DB7 /* LYPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYPhotosViewController.h; sourceTree = "<group>"; };
+		8B1BB11D1EA9F4E500755DB7 /* LYPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPhotosViewController.m; sourceTree = "<group>"; };
+		8B1BB11F1EA9F50F00755DB7 /* LYPhotoSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYPhotoSelectCell.h; sourceTree = "<group>"; };
+		8B1BB1201EA9F50F00755DB7 /* LYPhotoSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPhotoSelectCell.m; sourceTree = "<group>"; };
+		8B1BB1211EA9F50F00755DB7 /* LYPhotoSelectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYPhotoSelectCell.xib; sourceTree = "<group>"; };
+		8B1BB1241EA9F52E00755DB7 /* LYAutoPhotoAuthErrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAutoPhotoAuthErrorViewController.h; sourceTree = "<group>"; };
+		8B1BB1251EA9F52E00755DB7 /* LYAutoPhotoAuthErrorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYAutoPhotoAuthErrorViewController.m; sourceTree = "<group>"; };
+		8B1BB1261EA9F52E00755DB7 /* LYAutoPhotoAuthErrorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYAutoPhotoAuthErrorViewController.xib; sourceTree = "<group>"; };
+		D35B2A7BB5D75D92C079A47B /* libPods-LYAutoPhotoPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYAutoPhotoPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFEC404A7E2C7AA00693CF3C /* Pods-LYAutoPhotoPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYAutoPhotoPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYAutoPhotoPicker/Pods-LYAutoPhotoPicker.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B1BB0C71EA9F19B00755DB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2F164C67CEEBCE9B6AC787B /* libPods-LYAutoPhotoPicker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32E027BE8B3C4ED4903DF228 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35B2A7BB5D75D92C079A47B /* libPods-LYAutoPhotoPicker.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55205514556E94B3796CFA68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFEC404A7E2C7AA00693CF3C /* Pods-LYAutoPhotoPicker.debug.xcconfig */,
+				6DD022D5F3A985FB1C499ECC /* Pods-LYAutoPhotoPicker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8B1BB0C11EA9F19B00755DB7 = {
+			isa = PBXGroup;
+			children = (
+				8B1BB0E41EA9F1F600755DB7 /* Classes */,
+				8B1BB0CC1EA9F19B00755DB7 /* LYAutoPhotoPicker */,
+				8B1BB0CB1EA9F19B00755DB7 /* Products */,
+				55205514556E94B3796CFA68 /* Pods */,
+				32E027BE8B3C4ED4903DF228 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B1BB0CB1EA9F19B00755DB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B1BB0CA1EA9F19B00755DB7 /* LYAutoPhotoPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B1BB0CC1EA9F19B00755DB7 /* LYAutoPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				8B1BB0D01EA9F19B00755DB7 /* AppDelegate.h */,
+				8B1BB0D11EA9F19B00755DB7 /* AppDelegate.m */,
+				8B1BB0D31EA9F19B00755DB7 /* ViewController.h */,
+				8B1BB0D41EA9F19B00755DB7 /* ViewController.m */,
+				8B1BB0D61EA9F19B00755DB7 /* Main.storyboard */,
+				8B1BB0D91EA9F19B00755DB7 /* Assets.xcassets */,
+				8B1BB0DB1EA9F19B00755DB7 /* LaunchScreen.storyboard */,
+				8B1BB0DE1EA9F19B00755DB7 /* Info.plist */,
+				8B1BB0CD1EA9F19B00755DB7 /* Supporting Files */,
+			);
+			path = LYAutoPhotoPicker;
+			sourceTree = "<group>";
+		};
+		8B1BB0CD1EA9F19B00755DB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B1BB0CE1EA9F19B00755DB7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B1BB0E41EA9F1F600755DB7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8B1BB0E51EA9F1F600755DB7 /* Classes */,
+				8B1BB0E61EA9F1F600755DB7 /* Resources */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		8B1BB0E51EA9F1F600755DB7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8B1BB10B1EA9F3D800755DB7 /* LYAutoPhotoManager.h */,
+				8B1BB10C1EA9F3D800755DB7 /* LYAutoPhotoManager.m */,
+				8B1BB10E1EA9F3FF00755DB7 /* LYPhotoBasicViewController.h */,
+				8B1BB10F1EA9F3FF00755DB7 /* LYPhotoBasicViewController.m */,
+				8B1BB1111EA9F42C00755DB7 /* LYCameraUtilViewController.h */,
+				8B1BB1121EA9F42C00755DB7 /* LYCameraUtilViewController.m */,
+				8B1BB1141EA9F44800755DB7 /* LYAlbumsViewController.h */,
+				8B1BB1151EA9F44800755DB7 /* LYAlbumsViewController.m */,
+				8B1BB1171EA9F4A300755DB7 /* LYAlbumDisplayCell.h */,
+				8B1BB1181EA9F4A300755DB7 /* LYAlbumDisplayCell.m */,
+				8B1BB1191EA9F4A300755DB7 /* LYAlbumDisplayCell.xib */,
+				8B1BB11C1EA9F4E500755DB7 /* LYPhotosViewController.h */,
+				8B1BB11D1EA9F4E500755DB7 /* LYPhotosViewController.m */,
+				8B1BB11F1EA9F50F00755DB7 /* LYPhotoSelectCell.h */,
+				8B1BB1201EA9F50F00755DB7 /* LYPhotoSelectCell.m */,
+				8B1BB1211EA9F50F00755DB7 /* LYPhotoSelectCell.xib */,
+				8B1BB1241EA9F52E00755DB7 /* LYAutoPhotoAuthErrorViewController.h */,
+				8B1BB1251EA9F52E00755DB7 /* LYAutoPhotoAuthErrorViewController.m */,
+				8B1BB1261EA9F52E00755DB7 /* LYAutoPhotoAuthErrorViewController.xib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8B1BB0E61EA9F1F600755DB7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B1BB0E71EA9F1F600755DB7 /* ly_arrow_detail@2x.png */,
+				8B1BB0E81EA9F1F600755DB7 /* ly_arrow_detail@3x.png */,
+				8B1BB0E91EA9F1F600755DB7 /* ly_camera-front-on@2x.png */,
+				8B1BB0EA1EA9F1F600755DB7 /* ly_camera-front-on@3x.png */,
+				8B1BB0EB1EA9F1F600755DB7 /* ly_cross@2x.png */,
+				8B1BB0EC1EA9F1F600755DB7 /* ly_cross@3x.png */,
+				8B1BB0ED1EA9F1F600755DB7 /* ly_cut@2x.png */,
+				8B1BB0EE1EA9F1F600755DB7 /* ly_cut@3x.png */,
+				8B1BB0EF1EA9F1F600755DB7 /* ly_flash-off@2x.png */,
+				8B1BB0F01EA9F1F600755DB7 /* ly_flash-off@3x.png */,
+				8B1BB0F11EA9F1F600755DB7 /* ly_flash@2x.png */,
+				8B1BB0F21EA9F1F600755DB7 /* ly_flash@3x.png */,
+				8B1BB0F31EA9F1F600755DB7 /* ly_lock@2x.png */,
+				8B1BB0F41EA9F1F600755DB7 /* ly_lock@3x.png */,
+				8B1BB0F51EA9F1F600755DB7 /* ly_round@2x.png */,
+				8B1BB0F61EA9F1F600755DB7 /* ly_round@3x.png */,
+				8B1BB0F71EA9F1F600755DB7 /* ly_sure@2x.png */,
+				8B1BB0F81EA9F1F600755DB7 /* ly_sure@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B1BB0C91EA9F19B00755DB7 /* LYAutoPhotoPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B1BB0E11EA9F19B00755DB7 /* Build configuration list for PBXNativeTarget "LYAutoPhotoPicker" */;
+			buildPhases = (
+				00F6EE75A4CB257074427A36 /* [CP] Check Pods Manifest.lock */,
+				8B1BB0C61EA9F19B00755DB7 /* Sources */,
+				8B1BB0C71EA9F19B00755DB7 /* Frameworks */,
+				8B1BB0C81EA9F19B00755DB7 /* Resources */,
+				3A29975F0E1FE3FB48650B2F /* [CP] Embed Pods Frameworks */,
+				5BB75ED559433F77FCACDD9F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYAutoPhotoPicker;
+			productName = LYAutoPhotoPicker;
+			productReference = 8B1BB0CA1EA9F19B00755DB7 /* LYAutoPhotoPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B1BB0C21EA9F19B00755DB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = lyning;
+				TargetAttributes = {
+					8B1BB0C91EA9F19B00755DB7 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 28B5J4N7T8;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 8B1BB0C51EA9F19B00755DB7 /* Build configuration list for PBXProject "LYAutoPhotoPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B1BB0C11EA9F19B00755DB7;
+			productRefGroup = 8B1BB0CB1EA9F19B00755DB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B1BB0C91EA9F19B00755DB7 /* LYAutoPhotoPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B1BB0C81EA9F19B00755DB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1BB0F91EA9F1F600755DB7 /* ly_arrow_detail@2x.png in Resources */,
+				8B1BB0FC1EA9F1F600755DB7 /* ly_camera-front-on@3x.png in Resources */,
+				8B1BB1281EA9F52E00755DB7 /* LYAutoPhotoAuthErrorViewController.xib in Resources */,
+				8B1BB1091EA9F1F600755DB7 /* ly_sure@2x.png in Resources */,
+				8B1BB1041EA9F1F600755DB7 /* ly_flash@3x.png in Resources */,
+				8B1BB0FD1EA9F1F600755DB7 /* ly_cross@2x.png in Resources */,
+				8B1BB0DD1EA9F19B00755DB7 /* LaunchScreen.storyboard in Resources */,
+				8B1BB0DA1EA9F19B00755DB7 /* Assets.xcassets in Resources */,
+				8B1BB0FA1EA9F1F600755DB7 /* ly_arrow_detail@3x.png in Resources */,
+				8B1BB0FF1EA9F1F600755DB7 /* ly_cut@2x.png in Resources */,
+				8B1BB11B1EA9F4A300755DB7 /* LYAlbumDisplayCell.xib in Resources */,
+				8B1BB1061EA9F1F600755DB7 /* ly_lock@3x.png in Resources */,
+				8B1BB10A1EA9F1F600755DB7 /* ly_sure@3x.png in Resources */,
+				8B1BB1051EA9F1F600755DB7 /* ly_lock@2x.png in Resources */,
+				8B1BB0D81EA9F19B00755DB7 /* Main.storyboard in Resources */,
+				8B1BB0FE1EA9F1F600755DB7 /* ly_cross@3x.png in Resources */,
+				8B1BB1021EA9F1F600755DB7 /* ly_flash-off@3x.png in Resources */,
+				8B1BB1031EA9F1F600755DB7 /* ly_flash@2x.png in Resources */,
+				8B1BB1081EA9F1F600755DB7 /* ly_round@3x.png in Resources */,
+				8B1BB1071EA9F1F600755DB7 /* ly_round@2x.png in Resources */,
+				8B1BB0FB1EA9F1F600755DB7 /* ly_camera-front-on@2x.png in Resources */,
+				8B1BB1231EA9F50F00755DB7 /* LYPhotoSelectCell.xib in Resources */,
+				8B1BB1011EA9F1F600755DB7 /* ly_flash-off@2x.png in Resources */,
+				8B1BB1001EA9F1F600755DB7 /* ly_cut@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00F6EE75A4CB257074427A36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3A29975F0E1FE3FB48650B2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYAutoPhotoPicker/Pods-LYAutoPhotoPicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BB75ED559433F77FCACDD9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYAutoPhotoPicker/Pods-LYAutoPhotoPicker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B1BB0C61EA9F19B00755DB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1BB0D51EA9F19B00755DB7 /* ViewController.m in Sources */,
+				8B1BB1221EA9F50F00755DB7 /* LYPhotoSelectCell.m in Sources */,
+				8B1BB1131EA9F42C00755DB7 /* LYCameraUtilViewController.m in Sources */,
+				8B1BB1101EA9F3FF00755DB7 /* LYPhotoBasicViewController.m in Sources */,
+				8B1BB11A1EA9F4A300755DB7 /* LYAlbumDisplayCell.m in Sources */,
+				8B1BB1271EA9F52E00755DB7 /* LYAutoPhotoAuthErrorViewController.m in Sources */,
+				8B1BB11E1EA9F4E500755DB7 /* LYPhotosViewController.m in Sources */,
+				8B1BB0D21EA9F19B00755DB7 /* AppDelegate.m in Sources */,
+				8B1BB10D1EA9F3D800755DB7 /* LYAutoPhotoManager.m in Sources */,
+				8B1BB1161EA9F44800755DB7 /* LYAlbumsViewController.m in Sources */,
+				8B1BB0CF1EA9F19B00755DB7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8B1BB0D61EA9F19B00755DB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B1BB0D71EA9F19B00755DB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B1BB0DB1EA9F19B00755DB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B1BB0DC1EA9F19B00755DB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B1BB0DF1EA9F19B00755DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8B1BB0E01EA9F19B00755DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B1BB0E21EA9F19B00755DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFEC404A7E2C7AA00693CF3C /* Pods-LYAutoPhotoPicker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 28B5J4N7T8;
+				INFOPLIST_FILE = LYAutoPhotoPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyning.LYAutoPhotoPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a90290c5-d4ba-4009-8ec4-e3f037d5e16e";
+				PROVISIONING_PROFILE_SPECIFIER = "CaiTuo General Certificate";
+			};
+			name = Debug;
+		};
+		8B1BB0E31EA9F19B00755DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DD022D5F3A985FB1C499ECC /* Pods-LYAutoPhotoPicker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 28B5J4N7T8;
+				INFOPLIST_FILE = LYAutoPhotoPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyning.LYAutoPhotoPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a90290c5-d4ba-4009-8ec4-e3f037d5e16e";
+				PROVISIONING_PROFILE_SPECIFIER = "CaiTuo General Certificate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B1BB0C51EA9F19B00755DB7 /* Build configuration list for PBXProject "LYAutoPhotoPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1BB0DF1EA9F19B00755DB7 /* Debug */,
+				8B1BB0E01EA9F19B00755DB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B1BB0E11EA9F19B00755DB7 /* Build configuration list for PBXNativeTarget "LYAutoPhotoPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1BB0E21EA9F19B00755DB7 /* Debug */,
+				8B1BB0E31EA9F19B00755DB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B1BB0C21EA9F19B00755DB7 /* Project object */;
+}
