@@ -345,7 +345,9 @@
         tcvc.resetAspectRatioEnabled = NO;
         tcvc.aspectRatioPickerButtonHidden = YES;
     }
-    [self presentViewController:tcvc animated:YES completion:nil];
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:tcvc]
+                       animated:YES
+                     completion:nil];
 }
 
 - (void)surePhoto:(UIButton *)btn {

@@ -24,46 +24,46 @@
 
 - (void)checkPhotoAuth:(CheckAuthBlock)block {
     switch (_type) {
-            case LYAutoPhotoTypeCamera: {
-                AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
-                
-                if (authStatus == AVAuthorizationStatusNotDetermined) {
-                    [AVCaptureDevice
-                     requestAccessForMediaType:AVMediaTypeVideo
-                     completionHandler:^(BOOL granted) {
-                         if (granted) {
-                             block([self getDefaultController]);
-                         } else {
-                             block([self getErrorController]);
-                         }
-                     }];
-                } else if (authStatus == AVAuthorizationStatusDenied) {
-                    block([self getErrorController]);
-                } else if (authStatus == AVAuthorizationStatusAuthorized) {
-                    block([self getDefaultController]);
-                }
-                
-                break;
+        case LYAutoPhotoTypeCamera: {
+            AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+            
+            if (authStatus == AVAuthorizationStatusNotDetermined) {
+                [AVCaptureDevice
+                 requestAccessForMediaType:AVMediaTypeVideo
+                 completionHandler:^(BOOL granted) {
+                     if (granted) {
+                         block([self getDefaultController]);
+                     } else {
+                         block([self getErrorController]);
+                     }
+                 }];
+            } else if (authStatus == AVAuthorizationStatusDenied) {
+                block([self getErrorController]);
+            } else if (authStatus == AVAuthorizationStatusAuthorized) {
+                block([self getDefaultController]);
             }
-            case LYAutoPhotoTypeAlbum: {
-                PHAuthorizationStatus authStatus = [PHPhotoLibrary authorizationStatus];
-                
-                if (authStatus == PHAuthorizationStatusNotDetermined) {
-                    [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
-                        if (authStatus == PHAuthorizationStatusDenied) {
-                            block([self getErrorController]);
-                        } else if (authStatus == PHAuthorizationStatusAuthorized) {
-                            block([self getDefaultController]);
-                        }
-                    }];
-                } else if (authStatus == PHAuthorizationStatusDenied) {
-                    block([self getErrorController]);
-                } else if (authStatus == PHAuthorizationStatusAuthorized) {
-                    block([self getDefaultController]);
-                }
-                
-                break;
+            
+            break;
+        }
+        case LYAutoPhotoTypeAlbum: {
+            PHAuthorizationStatus authStatus = [PHPhotoLibrary authorizationStatus];
+            
+            if (authStatus == PHAuthorizationStatusNotDetermined) {
+                [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+                    if (status == PHAuthorizationStatusDenied) {
+                        block([self getErrorController]);
+                    } else if (status == PHAuthorizationStatusAuthorized) {
+                        block([self getDefaultController]);
+                    }
+                }];
+            } else if (authStatus == PHAuthorizationStatusDenied) {
+                block([self getErrorController]);
+            } else if (authStatus == PHAuthorizationStatusAuthorized) {
+                block([self getDefaultController]);
             }
+            
+            break;
+        }
         default:
             break;
     }

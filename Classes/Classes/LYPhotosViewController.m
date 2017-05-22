@@ -246,14 +246,27 @@ static const CGFloat kPhotoTumLength = 200;
                                                     tcvc.resetAspectRatioEnabled = NO;
                                                     tcvc.aspectRatioPickerButtonHidden = YES;
                                                 }
-                                                [self presentViewController:tcvc animated:YES completion:nil];
+                                                [self presentViewController:[[UINavigationController alloc] initWithRootViewController:tcvc] animated:YES completion:nil];
                                             }];
 }
 
 - (void)sureSelect:(UIButton *)btn {
     NSMutableArray<UIImage *> *array = [NSMutableArray array];
     for (PhotoAsset *asset in _selectPhotos) {
-        [array addObject:asset.image];
+        PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+        options.synchronous = YES;
+        CGSize size = CGSizeMake(asset.asset.pixelWidth, asset.asset.pixelHeight);
+        
+        __block UIImage *image = nil;
+        [[PHImageManager defaultManager] requestImageForAsset:asset.asset
+                                                   targetSize:size
+                                                  contentMode:PHImageContentModeDefault
+                                                      options:options
+                                                resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+                                                    image = result;
+                                                }];
+        
+        [array addObject:image];
     }
     
     self.block(YES, array);
